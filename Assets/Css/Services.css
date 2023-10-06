@@ -1,0 +1,84 @@
+/* :root{
+    --transit-3s:.3s ease-in-out;
+    --color-white:#ffffff;
+    --color-purplePink:#970572;
+    --black-transperent-white:#3f3f3fd5;
+    --black-transperent-white-complete:#3f3f3f;
+    --black-bg:#000;
+    --navbar-black:#212529;
+  } */
+.Services{
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+}
+.servicesCont p, .servicesCont h5, .servicesCont a{
+    font-size: 1.2rem;
+    color: var(--color-white);
+
+    line-height: 1.5rem;
+}
+.servicesCont h5{
+    font-size: 700;
+    font-size: 1.4rem;
+}
+.servicesCont p{
+    font-size:1.2rem ;
+}
+.servicesCont .row .card {
+    background: var(--black-transperent-white-complete);
+    padding: 2rem 1rem;
+    /* justify-content: space-between; */
+}
+.servicesCont .row .card:hover {
+    background: var(--black-transperent-white);
+}
+.servicesCont a{
+    padding: 1rem 1.5rem;
+    font-weight: 600;
+    background: var(--color-purplePink);
+    color: #ffffff;
+    font-size: 1.3rem;
+    border-radius: .5rem;
+    top: 2rem !important;
+}
+.Services, .servicesCont, .servicesCont .row, .servicesCont .row .col-sm-6 {
+    align-items: center;
+    justify-content: center;
+    /* width: 100%; */
+}
+.Services{
+    flex-direction: column;
+}
+@media screen and (max-width:768px) {
+    .Services{
+        background: var(--black-bg);
+        border-radius: .5rem;
+    }
+    .Services, .servicesCont, .servicesCont .row{
+        /* gap: 2rem; */
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .Services{
+        padding: 1rem 0;
+        background: var(--black-bg);
+        border-radius: .5rem;
+    }
+   h1.headings{
+        margin: 0;
+        padding-left: 1rem;
+        margin-top: 1rem;
+    }
+    h1.headings, h1.headings b{
+        /* width: 100%; */
+        /* align-items: flex-start; */
+        font-size: 1.5rem;
+    }
+    .servicesCont .row .card{
+        margin: 0;
+        padding: .5rem;
+        width: 100%;
+    }
+}
+

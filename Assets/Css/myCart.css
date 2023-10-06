@@ -1,0 +1,136 @@
+/* :root {
+    --transit-3s: .3s ease-in-out;
+    --color-white: #ffffff;
+    --color-purplePink: #970572;
+    --black-transperent-white: #3f3f3fd5;
+    --black-transperent-white-complete: #3f3f3f;
+    --black-bg: #000;
+    --navbar-black: #212529;
+} */
+
+
+
+.myCart{
+    position: relative;
+}
+.myCart .headings{
+    padding-left: 0;
+}
+.myCart .checkOut{
+    background: var(--black-transperent-white);
+    width:100%;
+    position: sticky;
+    top: 72px;
+    border-radius: .5rem;
+    justify-content: space-between;
+    
+    flex-wrap: wrap;
+    padding: .3rem;
+}
+.myCart .checkOut .first span{
+    font-size: 1.1rem;
+    color: var(--color-white);
+    padding: .5rem;
+    background: var(--black-bg);
+    
+    border-radius: .5rem;
+    
+}
+
+
+.myCart .checkOut .search-box input.text-input{
+    padding: .3rem .5rem;
+    font-size: 1.2rem;
+    color: var(--color-white);
+    background: var(--black-bg);
+    border-radius: .5rem;
+}
+.myCart .checkOut .btns{
+    
+    padding: .3rem;
+    background: var(--black-bg);
+    
+    border-radius: .5rem;
+}
+.myCart .checkOut .btns .two{
+    padding: .3rem .5rem;
+    font-size: 1.2rem;
+    color: var(--color-white);
+    background: var(--black-transperent-white);
+    border-radius: .5rem;
+}
+.myCart .checkOut .btns .two:hover{
+    color: var(--color-white);
+    background: var(--color-purplePink);
+
+}
+
+
+.listCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+.listCard li{
+    background: var(--black-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: .5rem;
+    padding: .5rem;
+    position: relative;
+    width: fit-content;
+}
+.listCard li div.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+
+}
+.listCard li div.img img{
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+}
+.listCard li:hover div.img img{
+    transform: scale(1.2);
+}
+.listCard li h4{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.listCard li .lastd{
+    flex-direction: column;
+    gap: 1rem;
+}
+.listCard li .lastd .lastdd{
+    gap: 1rem;
+    
+}
+.listCard li .lastd .lastdd button{
+    border-radius: .5rem;
+    background: var(--black-transperent-white);
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 1.2rem;
+}
+.listCard li .lastd .lastdd button:hover{
+    background: var(--color-purplePink);
+    color: var(--color-white);
+    
+}
+.listCard li .lastd button.changeDelete{
+    background: var(--color-purplePink);
+    color: var(--color-white);
+    font-size: 1.3rem;
+    padding: .5rem;
+    border-radius: .5rem;
+}

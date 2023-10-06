@@ -1,0 +1,336 @@
+/* :root {
+    --transit-3s: .3s ease-in-out;
+    --color-white: #ffffff;
+    --color-purplePink: #970572;
+    --black-transperent-white: #3f3f3fd5;
+    --black-transperent-white-complete: #3f3f3f;
+    --black-bg: #000;
+    --navbar-black: #212529;
+} */
+
+.shopHome {
+    position: relative;
+}
+
+.slider_carouselshop .card_box {
+    min-height: 50vh;
+    flex-direction: column;
+}
+
+.slider_carouselshop .card_box h2 {
+    font-size: xx-large;
+    color: var(--color-purplePink);
+    font-weight: 900;
+    text-align: center;
+
+}
+
+.ShopHeader {
+    position: sticky;
+    top: 75px;
+    width: 100%;
+    border-radius: .5rem;
+    background: var(--black-transperent-white-complete);
+    justify-content: space-between;
+    padding: .5rem;
+    flex-wrap: wrap;
+    z-index: 100;
+}
+.filterDrop{
+    display: none;
+}
+.ShopHeader .search-box{
+    width: 300px;
+    flex-wrap: wrap;
+    gap: .5rem;
+    /* align-items: flex-start; */
+    justify-content: flex-end;
+}
+.ShopHeader .search-box input#filter{
+    width: 100%;
+}
+.ShopHeader .search-box input#filter, .filterDrop i{
+    border-radius: .5rem;
+    padding: .5rem;
+    font-size: 1.1rem;
+    background: none;
+    outline: .1rem solid var(--color-white);
+    opacity: .7;
+
+}
+.filterDrop i{
+    
+    margin-left: .3rem;
+}
+
+
+.ShopHeader .search-box input#filter:focus {
+    opacity: 1;
+
+    outline: none;
+    background: var(--black-bg);
+}
+
+.ShopHeader .filter-box {
+    flex-wrap: wrap;
+    padding: .5rem;
+    border-radius: .5rem;
+    background: var(--black-bg);
+}
+
+.ShopHeader .filter-box .btnFilter {
+    padding: .3rem;
+    border-radius: .3rem;
+    background: var(--black-transperent-white);
+    color: #ffffff;
+
+}
+
+
+.ShopHeader .filter-box .btnFilter:hover,
+.ShopHeader .filter-box .btnFilter.active {
+    background: var(--color-purplePink);
+
+}
+.shopsect{
+    flex-direction: column;
+   
+}
+.shopsect .list {
+    /* background:  var(--black-transperent-white); */
+    padding: 1rem;
+    border-radius:.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: flex-start; */
+}
+.shopsect .list .store-product {
+    background: var(--black-transperent-white);
+    /* height: 300px; */
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: .5rem;
+    width: 250px;
+    
+}
+.shopsect .list .store-product.active{
+    animation: showfilted .3s linear;
+    display: none;
+    /* animation-fill-mode: forwards; */
+    transform: scale(0);
+}
+@keyframes showfilted {
+    0%{
+        display: none;
+        transform: scale(0);
+    }
+    100%{
+        display: flex;
+        transform: scale(1);
+    }
+}
+.shopsect .list .store-product:hover{
+    background: var(--black-transperent-white-complete);
+}
+.shopsect .list .store-product .imag{
+    border-radius: .5rem;
+    background: var(--black-bg);
+    padding: .3rem;
+    width: 100%;
+   height: 200px;
+}
+.shopsect .list .store-product:hover{
+    transform: translateY(-10px);
+}
+.shopsect .list .store-product .imag img{
+    background: none;
+    padding: .5rem;
+    width: 100%;
+    object-fit: contain;
+    
+}
+.shopsect .list .store-product:hover .imag img{
+    transform: rotateY(180deg);
+}
+
+.shopsect .list .store-product .cardcont{
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    /* position: relative; */
+}
+.shopsect .list .store-product .cardcont .cont{
+    
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+.shopsect .list .store-product .cardcont .cont b.Brand{
+    color: var(--color-white);
+    font-size: 1.1rem;
+    opacity: .5;
+}
+.shopsect .list .store-product .cardcont .cont h2.title{
+    color: var(--color-purplePink);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.shopsect .list .store-product .cardcont .cont .prices{
+    color: var(--color-white);
+    width: 100%;
+}
+.shopsect .list .store-product .cardcont .cont .prices del{
+    font-size: 1.2rem;
+    text-decoration: line-through .2rem;
+    
+}
+.shopsect .list .store-product .cardcont .cont .prices span{
+    
+    /* color: var(--color-purplePink); */
+    font-size: 1.3rem;
+}
+.shopsect .list .store-product .cardcont div.cont{
+    margin-top: .5rem;
+}
+
+
+
+
+.shopsect .list .store-product .cardcont .cont .btnss .btnssBtn{
+    
+    color: var(--color-purplePink);
+    font-size: 1rem;
+    background: var(--black-bg);
+    width: 2rem;
+    height: 2rem;
+    border-radius: .5rem;
+}
+.shopsect .list .store-product .cardcont .cont .btnss .btnssBtn i{
+    
+    color: var(--color-purplePink);
+    color: var(--color-white);
+}
+.shopsect .list .store-product .cardcont .cont .btnss .btnssBtn:hover i{
+    
+    color: var(--color-purplePink);
+}
+
+
+
+
+.EndSearch{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.EndSearch.active{
+    display: flex;
+}
+
+
+/* Alert  Messages css ===================== =========== => */
+
+.alertMessages{
+    position: fixed;
+    top: 1rem;
+    /* background: var(--color-purplePink); */
+    gap: .5rem;
+    flex-direction: column;
+    z-index: 1000000001;
+    align-items: flex-start;
+    
+}
+.alertMessages .messageMess{
+    background: var(--navbar-black);
+    color: var(--color-white);
+    padding: .7rem 1.3rem;
+    font-size:1rem;
+    font-weight: 700;
+    border-radius: .5rem;
+    border: .1rem solid var(--color-white);
+    display: none;
+    position: relative;
+    overflow: hidden;
+    /* display: flex; */
+    gap: .5rem;
+}
+.alertMessages .messageMess b{
+    color: var(--color-purplePink);
+}
+
+.alertMessages .messageMess.active{
+    
+    display: flex;
+}
+
+.alertMessages .messageMess::before{
+    content: "";
+    height: .4rem;
+    width: 100%;
+    background: var(--color-white);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: .5rem;
+}
+.alertMessages .messageMess.active::before{
+    animation: www 4s forwards;
+    /* left: 0; */
+    width:100% ;
+}
+
+
+@keyframes www {
+    100%{
+        /* left: -100%; */
+        width:0 ;
+
+    }
+}
+
+@media screen and (max-width:773px) {
+    .ShopHeader {
+        align-items: center;
+        justify-content: center;
+    }
+    .filterDrop{
+        display: flex;
+    }
+    .filter-box{
+        width: 100%;
+        display: none;
+    }
+    .search-box{
+        width: 100% !important;
+        justify-content: space-between !important;
+    } 
+    .search-box input#filter{
+        width: 80% !important;
+    }
+    .filter-box.active{
+        display: flex;
+    }
+    .ShopHeader.container{
+        padding: 0 !important;
+    }
+}
+@media screen and (max-width:620px) {
+    .shopsect .list{
+        padding: 0;
+    }
+    .shopsect .list .store-product {
+        width: 100%;
+    }
+    .shopsect .list .store-product .imag{
+        width: 100%;
+        height: fit-content;
+    }
+}
+@media screen and (max-width:400px) {
+    .shopsect{
+        padding: 0;
+    }
+    
+}

@@ -1,0 +1,348 @@
+/* :root{
+    --transit-3s:.3s ease-in-out;
+    --color-white:#ffffff;
+    --color-purplePink:#970572;
+    --black-transperent-white:#3f3f3fd5;
+    --black-transperent-white-complete:#3f3f3f;
+    --black-bg:#000;
+    --navbar-black:#212529;
+  }
+ */
+
+
+
+
+
+
+.Home-slider{
+    min-height:calc(100vh - 100px);
+    width: 100%;
+    /* padding: 1rem; */
+    margin: 1rem 0;
+    /* margin-top: 3rem; */
+    border-radius: .5rem;
+    /* background:var(--black-bg); */
+    /* background: url(../../Assets/images/bg/bb3.jpeg) var(--black-transperent-white); */
+    /* background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.HeroHome-carousel.owl-carousel{
+    border-radius: .5rem;
+    background: var(--black-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 4rem;
+    position: relative;
+    min-height:calc(100vh - 170px);
+  
+}
+
+.HeroHome-carousel.owl-carousel .item {
+    height: 70vh;
+    background:var(--black-transperent-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100%; */
+    overflow:hidden;
+    border-radius: .5rem;
+    position: relative;
+    
+}
+.HeroHome-carousel.owl-carousel .item:hover img{
+    transform: scale(1.2);
+}
+
+.HeroHome-carousel.owl-carousel .item .heroCaroContent{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: var(--black-transperent-white);
+    /* position: relative; */
+}
+.HeroHome-carousel.owl-carousel .item .heroCaroContent .doscount{
+    position: absolute;
+    left: -4rem;
+    top: -2.5rem;
+    padding: 1rem;
+    /* padding-right: 1rem; */
+    padding-top: 4rem;
+    font-size: 1rem;
+    font-weight: 800;
+    text-align: center;
+    color: #ffffff;
+    border-radius: .5rem;
+    background: var(--color-purplePink);
+    transform: rotate(-45deg);
+    width: 10rem;
+    
+    
+}
+.HeroHome-carousel.owl-carousel .item .heroCaroContent .heCarCnt-text-box{
+    /* background:var(--black-transperent-white); */
+    width:100%;
+    height:100%;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 1;
+    padding: 1rem 3rem;
+}
+
+.HeroHome-carousel.owl-carousel .item .heroCaroContent .heCarCnt-img-box{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    /* background: var(--black-transperent-white); */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem;
+}
+
+.HeroHome-carousel.owl-carousel .item .heroCaroContent .heCarCnt-img-box img{
+    width: 50%;
+    transform: rotate(190deg);
+    
+}
+.HeroHome-carousel.owl-carousel .item:hover .heroCaroContent .heCarCnt-img-box img{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* doscount */
+
+
+
+
+.HeroHome-carousel.owl-carousel .item .heroCaroContent h1{
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+
+}
+
+.HeroHome-carousel.owl-carousel .item .heroCaroContent p{
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    
+}
+.heroCaroContent .pricebox{
+    gap: 0;
+    flex-wrap:wrap ;
+    row-gap: 1rem;
+}
+.heroCaroContent .pricebox span, .heroCaroContent .pricebox del{
+    font-size: 1.1rem;
+    padding: .5rem;
+    background: var(--color-purplePink);
+    color: #ffffff;
+    margin: 0;
+}
+.heroCaroContent .pricebox span{
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    border-left: .2rem solid var(--black-bg);
+}
+.heroCaroContent .pricebox del{
+    
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    border-right: .2rem solid var(--black-bg);
+    text-decoration: line-through .2rem var(--color-purplePink);
+}
+.heroCaroContent .pricebox span:hover, .heroCaroContent .pricebox del:hover{
+    background: var(--black-transperent-white);
+}
+
+.heroCaroContent .heCarCnt-text-box a.heCarCntbtn{
+    background: var(--black-bg);
+    color: var(--black-transperent-white);
+    padding: 1rem;
+    width: 350px;
+    text-align: center;
+    border-radius: .5rem;
+    font-size: 1.4rem;
+    color: var(--color-white);
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.heroCaroContent .heCarCnt-text-box a.heCarCntbtn:hover{
+    
+    background: var(--color-purplePink);
+}
+
+
+
+
+
+
+
+
+.HeroHome-carousel.owl-carousel .item .heroCaroContent h1{
+    color: var(--color-white);
+    /* font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 1rem; */
+}
+
+.owl-nav button{
+    padding: 1rem;
+    background: none;
+    position: absolute;
+    top: 45%;
+    border-radius: .5rem;
+    padding: .3rem;
+    
+    
+}
+.owl-nav button:hover, .owl-nav button:focus{
+    background: none;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    border-radius: .5rem;
+}
+.owl-nav button span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 2.2rem;
+    min-height: 2rem;
+    color: var(--color-white);
+    background:var(--color-purplePink);
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: .3rem;
+    border-radius: .5rem;
+    outline: .2rem solid var(--color-purplePink);
+    
+}
+.owl-nav button:hover span{
+    background: var(--black-bg);
+    color: var(--color-purplePink);
+}
+.owl-nav button:first-child{
+    left: .7rem;
+}
+.owl-nav button:last-child{
+    right: .7rem;
+}
+.owl-dots{
+    gap: .3rem;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+}
+.owl-theme .owl-dots .owl-dot{
+    display:flex !important ;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: .3rem .2rem .2rem .2rem !important;
+    background: var(--black-transperent-white) !important;
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: .2rem;
+}
+.owl-theme .owl-dots .owl-dot span {
+    min-width: 60% !important;
+    min-height: 60% !important;
+    margin: 0 !important;
+    /* padding: 0; */
+    background: var(--black-bg) !important;
+    display: flex;
+    
+    border-radius: .2rem !important;
+}
+.owl-theme .owl-dots .owl-dot.active span{
+    background: var(--color-purplePink) !important;
+
+}
+
+
+@media screen and (max-width:1392px) {
+    .HeroHome-carousel.owl-carousel .item .heroCaroContent .heCarCnt-img-box{
+        position: relative;
+    }
+    .HeroHome-carousel.owl-carousel .item .heroCaroContent .heCarCnt-text-box, .HeroHome-carousel.owl-carousel .item .heroCaroContent .heCarCnt-img-box{
+        width: 40%;
+    }
+    .HeroHome-carousel.owl-carousel .item .heroCaroContent .heCarCnt-img-box img{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width:1028px) {
+    .HeroHome-carousel.owl-carousel .item .heroCaroContent{
+        flex-wrap: wrap;
+        display: block;
+        flex-direction: column;
+        /* background: red; */
+    }
+    .HeroHome-carousel.owl-carousel .item .heroCaroContent .heCarCnt-text-box, .HeroHome-carousel.owl-carousel .item .heroCaroContent .heCarCnt-img-box{
+        z-index: 1;
+        width: 100%;
+        align-items: center;
+    }
+    .item .heroCaroContent .heCarCnt-img-box{
+       z-index: 1;
+    }
+    .HeroHome-carousel.owl-carousel .item .heroCaroContent p{
+        display: none;
+    }
+}
+@media screen and (max-width:990px) {
+    .HeroHome-carousel.owl-carousel .item img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .HeroHome-carousel.owl-carousel .item .heroCaroContent{
+        text-align: center;
+    }
+    
+}
+@media screen and (max-width:500px) {
+    .heroCaroContent .pricebox{
+        display: none;
+
+    }
+    .heroCaroContent .heCarCnt-text-box{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .heroCaroContent .heCarCnt-text-box a.heCarCntbtn{
+        width: 95%;
+        
+    }
+    .HeroHome-carousel.owl-carousel .item .heroCaroContent h1{
+        font-size: 1.2rem;
+    }
+    .HeroHome-carousel.owl-carousel{
+        padding: 1rem;
+      
+    }
+    
+}

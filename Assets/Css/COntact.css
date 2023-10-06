@@ -1,0 +1,219 @@
+/* :root {
+    --transit-3s: .3s ease-in-out;
+    --color-white: #ffffff;
+    --color-purplePink: #970572;
+    --black-transperent-white: #3f3f3fd5;
+    --black-transperent-white-complete: #3f3f3f;
+    --black-bg: #000;
+    --navbar-black: #212529;
+} */
+
+
+
+
+
+
+/* contact us section css ==================================== ===== ============ => */
+
+.ContactUs {
+    flex-direction: column;
+    background: var(--black-bg);
+    padding: 1rem;
+    border-radius: .5rem;
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+}
+
+.ContactUs .contSects {
+    /* background: var(--black-transperent-white-complete); */
+    row-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.ContactUs .contSects .contSect {
+    background: var(--black-bg);
+    flex-direction: column;
+    padding: 1rem;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.ContactUs .contSects .contSect h3 {
+    font-size: x-large;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--color-purplePink);
+
+}
+
+.ContactUs .contSects .contSect:first-child {
+    justify-content: center;
+    align-items: center;
+}
+
+.ContactUs .contSects .contSect:first-child .info {
+    flex-direction: column;
+}
+
+.ContactUs .contSects .contSect:first-child .info p {
+    font-size: large;
+    line-height: 1.5rem;
+}
+
+.ContactUs .contSects .contSect:first-child .info ul.ul {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.ContactUs .contSects .contSect:first-child .info ul.ul .contInFoLink {
+    gap: .4rem;
+    cursor: pointer;
+}
+
+.ContactUs .contSects .contSect:first-child .info ul.ul .contInFoLink {
+    color: var(--color-white);
+}
+
+.ContactUs .contSects .contSect:first-child .info ul.ul .contInFoLink i {
+    color: var(--color-purplePink);
+}
+
+.ContactUs .contSects .contSect:first-child .info ul.ul .contInFoLink:hover {
+    color: var(--color-purplePink);
+}
+
+.ContactUs .contSects .contSect:first-child .info ul.ul .contInFoLink:hover i {
+    color: var(--color-white);
+    transform: rotate(360deg);
+}
+
+.ContactUs .contSects .contSect:first-child .info .ContsocialM {
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.ContactUs .contSects .contSect:first-child .info .ContsocialM .ci-ontsolink {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--black-transperent-white);
+    padding: .2rem;
+    border-radius: .5rem;
+
+    color: var(--color-white);
+}
+
+.ContactUs .contSects .contSect:first-child .info .ContsocialM .ci-ontsolink i {
+    color: var(--color-white);
+}
+
+.ContactUs .contSects .contSect:first-child .info .ContsocialM .ci-ontsolink:hover i {
+    color: var(--color-purplePink);
+    transform: rotate(360deg);
+}
+
+.ContactUs .contSects .contSect:first-child .info .ContsocialM .ci-ontsolink:hover {
+    background: var(--black-transperent-white-complete);
+}
+
+
+
+.ContactUs .contSects .contSect:nth-child(2) {
+    background: var(--black-transperent-white);
+    border-radius: .5rem;
+
+}
+
+.ContactUs .contSects .contSect:nth-child(2) form {
+    background: var(--black-bg-sub);
+    padding: 1rem;
+    border-radius: .5rem;
+
+}
+
+.ContactUs .contSects .contSect:nth-child(2) input,
+.ContactUs .contSects .contSect:nth-child(2) textarea {
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    padding: .5em;
+    border-radius: .5rem;
+    color: var(--black-transperent-white-complete);
+    outline: .1rem solid var(--color-white);
+}
+
+.ContactUs .contSects .contSect:nth-child(2) input:hover,
+.ContactUs .contSects .contSect:nth-child(2) textarea:hover,
+.ContactUs .contSects .contSect:nth-child(2) input:focus,
+.ContactUs .contSects .contSect:nth-child(2) textarea:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    color: var(--color-white);
+    outline: .1rem solid var(--color-purplePink);
+}
+
+.ContactUs .contSects .contSect:nth-child(2) form button[type="submit"] {
+    padding: .5rem 1rem;
+    text-align: center;
+    width: 100%;
+    border-radius: .5rem;
+    font-size: larger;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--color-white);
+    background: var(--black-transperent-white-complete);
+}
+
+.ContactUs .contSects .contSect:nth-child(2) form button[type="submit"]:hover {
+    color: var(--color-white);
+    background: var(--color-purplePink);
+}
+
+.ContactUs .contSects .contSect:nth-child(3){
+    /* background: red; */
+}
+.ContactUs .contSects .contSect:nth-child(3) iframe{
+    border-radius: .5rem;
+    width: 100%;
+    min-height: 400px;
+
+}
+
+@media screen and (max-width:768px) {
+    .ContactUs, .ContactUs .contSects{
+        gap: 2rem;
+        padding: 0;
+    }
+    
+    .ContactUs .container{
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+    .ContactUs .contSects .contSect:nth-child(1) ul{
+        margin: 0;
+        padding: 0;
+    }
+   
+    .ContactUs .contSects .contSect:nth-child(3){
+        width: 100%;
+    }
+    .ContactUs .contSects{
+        flex-direction: column;
+    }
+    .ContactUs .contSects .contSect{
+        width: 100%;
+    }
+}
+/* @media screen and (max-width:545px) {
+} */

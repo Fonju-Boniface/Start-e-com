@@ -1,0 +1,166 @@
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  color: var(--color-white);
+  transition: var(--transit-3s);
+}
+
+:root{
+  --transit-3s:.3s ease-in-out;
+  --color-white:#000000;
+  --color-purplePink:rgb(244, 5, 244);
+  --black-transperent-white:#dcdbdbd5;
+  --black-transperent-white-complete:#c5c4c4;
+  --black-bg:#ffffff;
+  --black-bg-sub:#e2e2e2e0;
+  --navbar-black:#f3f3f3;
+
+}
+
+
+body.dark{
+  --transit-3s:.3s ease-in-out;
+  --color-white:#ffffff;
+  --color-purplePink:#970572;
+  --black-transperent-white:#3f3f3fd5;
+  --black-transperent-white-complete:#3f3f3f;
+  --black-bg:#000;
+  --black-bg-sub:#000000e4;
+  --navbar-black:#212529;
+}
+body{
+  width: 100%;
+  min-height: 100vh;
+  background:var(--black-bg-sub);
+}
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+a, span, div, input, h1, h2, h3, h4, h5, h6, p, del, button, li, ul, nav, header, section, main, textarea, footer, b, strong, sup, sub, form{
+  font-family: 'Poppins', sans-serif;
+}
+.App{
+  /* background: red; */
+  min-height: 100vh;
+  margin-top: 4.5rem;
+  flex-direction: column;
+}
+.display{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .3rem;
+}
+
+h1.headings{
+  
+  color: var(--color-white);
+  /* width: 100%; */
+  /* text-align: left; */
+  padding-left: 4rem;
+}
+h1.headings, h1.headings b{
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  
+}
+h1.headings b{
+  color: var(--color-purplePink);
+}
+
+
+
+
+
+
+
+
+
+
+
+a{
+  text-decoration: none;
+}
+
+.text-co{
+  color: var(--color-white);
+}
+li.nav-item:first-child{
+  margin-left: 0;
+}
+li.nav-item{
+  margin-left: 1rem;
+}
+li.nav-item a{
+  font-size: 1rem;
+  font-weight: 600;
+
+}
+li.nav-item:hover a{
+  color: var(--color-purplePink);
+  
+}
+.navbar{
+  background: var(--navbar-black);
+}
+
+
+
+
+/* .Sect-active-Secttab h1{
+  color:red;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

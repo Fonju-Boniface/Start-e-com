@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #logoWrapper{
+            display: none;
+        }
+    </style>
+</head>
+<body class="">
+    <div class="container">
+       
+        <header>
+            <h1>Your Shopping Cart</h1>
+            <div class="shopping">
+                <img src="image/shopping.svg">
+                <span class="quantity">0</span>
+            </div>
+
+            <div class="logos">
+                <div id="alllogo" class="logo">
+                    All logo
+                </div>
+                <div id="logoWrapper" class="logo-wrapper">
+                    <div class="logo store-product watch">
+                        <b class=""> logo watch</b>
+                        
+                    </div>
+                    <div class="logo store-product shirt">
+                        <b class="">logo shirt</b>
+                        
+                    </div>
+                    <div class="logo store-product gown">
+                        <b class="">logo gown</b>
+                        
+                    </div>
+                    <div class="logo store-product jewelry">
+                        
+                        <b class="">logo Jewelry</b>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+        <div>
+            <h1>Product filter</h1>
+            <div class="search-box">
+                <input type="text" name="" id="find" placeholder="search here--.......:" onkeyup="search()">
+            </div>
+            <div class="filter-box">
+                <a href="" class="btn active" data-filter="all">All</a>
+                <a href="" class="btn" data-filter="watch">Watch</a>
+                <a href="" class="btn" data-filter="shirt">Shirt</a>
+                <a href="" class="btn" data-filter="gown">Gown</a>
+                <a href="" class="btn" data-filter="jewelry">Jewelry</a>
+                <a href="" class="btn active" data-filter="all">All</a>
+            </div>
+            
+        </div>
+
+        <div id="mesages">
+
+        </div>
+
+        <div class="list">
+          
+        </div>
+    </div>
+    <div class="card">
+        <h1>Card</h1>
+        <ul class="listCard">
+        </ul>
+        <div class="checkOut">
+            <div class="total">0</div>
+            <div class="closeShopping">Close</div>
+            <div class="ClearShopping">Clear All</div>
+        </div>
+    </div>
+
+    <div class="Det-list">
+
+    </div>
+    
+    <script>
+        document.getElementById("alllogo").style.display = "block"
+        
+    </script>
+
+
+    <script src="app.js"></script>
+    <script src="sort.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+
+
+
+
+
+  .Secttab-content{
+    width: 100%;
+    min-height: 100vh;
+    flex-direction: column;
+    display: none !important;
+  }
+  .Sect-active-content{
+    display: flex !important;
+  }
+
+
+
+
+
+
+.tab-content{
+    display: none;
+    flex-direction: column;
+}
+.active-tab{
+    /* background: red; */
+    display: flex;
+}
+.active-link{
+    background: var(--color-purplePink) !important;
+    /* color: var(--color-white) !important; */
+}
+.active-link{
+    background: var(--black-bg) !important;
+    color: var(--color-purplePinkp) !important;
+}

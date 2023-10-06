@@ -1,0 +1,131 @@
+/* :root {
+    --transit-3s: .3s ease-in-out;
+    --color-white: #ffffff;
+    --color-purplePink: #970572;
+    --black-transperent-white: #3f3f3fd5;
+    --black-transperent-white-complete: #3f3f3f;
+    --black-bg: #000;
+    --navbar-black: #212529;
+}
+
+ */
+
+
+.card_wrapper {
+    background: var(--black-bg);
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: .5rem;
+    width: 100%;
+}
+
+.card_wrapper span.Span {
+    padding: .3rem .5rem;
+    background: var(--color-purplePink);
+    align-self: left;
+    margin: 0;
+    margin-left: 1rem;
+    border-radius: .5rem;
+    position: relative;
+    transition: var(--transit-3s);
+    top: .3rem;
+    z-index: 3;
+}
+
+
+.card_wrapper .slider_carousel {
+    padding: 1rem;
+    padding-top: 2rem;
+    min-height: 300px;
+    border-radius: .5rem;
+    z-index: 1;
+}
+
+.card_wrapper:hover .slider_carousel {
+    outline: .1rem solid var(--color-purplePink);
+}
+
+.card_wrapper .slider_carousel .card_box {
+    padding: 1rem;
+    border-radius: .5rem;
+    background: var(--black-transperent-white);
+    min-height: 250px;
+    flex-direction: column;
+    gap: 1rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.card_wrapper .slider_carousel .card_box .img {
+    padding: 1rem;
+    border-radius: .5rem;
+    background: var(--black-bg);
+}
+
+.card_wrapper .slider_carousel .card_box:hover .img img {
+    padding: 1rem;
+    width: 100%;
+}
+
+.card_wrapper .slider_carousel .card_box .card_text {
+    /* padding: 1rem; */
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.card_wrapper .slider_carousel .card_box .card_text h4 {
+    font-size: large;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.5rem;
+    color: var(--color-white);
+}
+
+.card_wrapper .slider_carousel .card_box .card_text a {
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.5rem;
+    color: var(--black-transperent-white-complete);
+    padding: .3rem 1rem;
+    border-radius: .5rem;
+    text-align: center;
+    width: 100%;
+    background: var(--black-bg);
+}
+
+.card_wrapper .slider_carousel .card_box .card_text a:hover {
+    background: var(--color-purplePink);
+    color: #ffffff;
+}
+
+.card_wrapper .slider_carousel .card_box .doscount {
+
+    position: absolute;
+    left: -5rem;
+    top: -2.5rem;
+    padding: .3rem 1rem;
+    /* padding-right: 1rem; */
+    padding-top: 3.5rem;
+    font-size: .8rem;
+    font-weight: 800;
+    text-align: center;
+    color: #ffffff;
+    border-radius: .5rem;
+    background: var(--color-purplePink);
+    transform: rotate(-45deg);
+    width: 10rem;
+
+}
+
+.carouses{
+    margin-bottom:6rem;
+}
+
+@media screen and (max-width:1000px) {
+    .card_wrapper .slider_carousel {
+        
+        height: fit-content;
+        
+    }
+}

@@ -1,0 +1,222 @@
+/* 
+:root{
+    --transit-3s:.3s ease-in-out;
+    --color-white:#ffffff;
+    --color-purplePink:#970572;
+    --black-transperent-white:#3f3f3fd5;
+    --black-transperent-white-complete:#3f3f3f;
+    --black-bg:#000;
+    --navbar-black:#212529;
+  }
+ */
+
+
+
+
+.Details_list_section{
+    margin:0 0 4rem 0;
+    /* width: 100%; */
+    padding: 1rem;
+    background: var(--black-transperent-white);
+    flex-direction: column;
+    border-radius: .5rem;
+    display: none;
+    
+}
+.Details_list_section.ActiveDetListSec{
+    display: block;
+}
+.CloseDetails{
+    position: sticky;
+    top: 75px;
+
+}
+    .Details_list_section a.CloseDetail{
+        padding: .3rem;
+        background: var(--color-purplePink);
+        color: var(--color-white);
+        border-radius: .5rem;
+        width: 2rem;
+        height: 2rem;
+        margin-bottom: 3rem;
+    }
+    .Details_list_section a.CloseDetail:hover{
+        background: var(--black-transperent-white-complete);
+        color: var(--color-white);
+    }
+    .Details_list_section .Det-list{
+        border-radius: .5rem;
+        padding: 1rem;
+        background: var(--black-bg);
+    }
+    .Details_list_section .Det-list .tab-content .DetContentWrapper{
+        /* border-radius: .5rem;*/
+        padding: 1rem; 
+        gap: 2rem; 
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .Details_list_section .Det-list .tab-content h1.title{
+        font-size: xx-large;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: var(--color-purplePink);
+        padding-left: 1rem;
+        margin-bottom: 1.5rem;
+        text-align: left;
+        width: 100%;
+    }
+    .Details_list_section .Det-list .tab-content .DetContentWrapper .DetContentimage{
+        width: 400px;
+        border-radius: .5rem;
+        background: var(--black-transperent-white);
+        padding: 1rem;
+        min-height: 100% !important;
+    }
+    .Details_list_section .Det-list .tab-content .DetContentWrapper .DetContentimage img{
+        width: 100%;
+        border-radius: .5rem;
+        padding: 1rem;
+        object-fit: cover;
+    }
+    .Details_list_section .Det-list .tab-content .DetContentWrapper:hover .DetContentimage img{
+        transform: scale(1.2);
+        
+    }
+
+
+
+
+
+
+
+    .Details_list_section .Det-list .tab-content .DetContentWrapper .DetContentInfo{
+        width: 60%;
+        border-radius: .5rem;
+        padding: 1rem;
+        min-height: 100% !important;
+        gap: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column !important;
+    }
+
+
+    .Details_list_section .Det-list .tab-content .DetContentWrapper .DetContentInfo h1.title{
+        font-size:large;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: var(--color-purplePink);
+    }
+    .Details_list_section .Det-list .tab-content .DetContentWrapper .DetContentInfo p.Text{
+        font-size: 1.1rem;
+        font-weight: 600;
+        /* max-width: 80%; */
+        line-height: 1.5rem;
+        /* text-transform: uppercase; */
+        color: var(--color-white);
+    }
+    .Details_list_section .Det-list .tab-content .DetContentWrapper .DetContentInfo .price{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        /* flex-direction: column !important; */
+        gap: 2rem;
+        margin-top: 1rem;
+    }
+    .Details_list_section .Det-list .tab-content .DetContentWrapper .DetContentInfo .price span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column !important;
+        /* gap: .5rem !important; */
+        /* padding: 1rem; */
+        border-radius:.5rem;
+        overflow: hidden;
+        background: var(--black-transperent-white);
+    }
+    .Details_list_section .Det-list .tab-content .DetContentWrapper .DetContentInfo .price span b{
+        font-weight: 700;
+        font-size: 1rem;
+        padding: .3rem;
+        border-bottom: .1rem solid var(--color-purplePink);
+        color: var(--color-white);
+    }
+    .Details_list_section .Det-list .tab-content .DetContentWrapper .DetContentInfo .price span del, .Details_list_section .Det-list .tab-content .DetContentWrapper .DetContentInfo .price span p{
+        
+        padding: .3rem;
+        /* border-bottom: .1rem solid var(--color-purplePink); */
+        background: var(--navbar-black);
+        text-align: center;
+        width: 100%;
+        color: var(--color-white);
+        
+    }
+    .Details_list_section .Det-list .tab-content .DetContentWrapper .DetContentInfo .price span del{
+        text-decoration: line-through .2rem;
+
+    }
+
+   
+    .Details_list_section .Det-list .tab-content .DetContentWrapper .DetContentInfo .DetContentbtn {
+        align-items: flex-start;
+        padding: .5rem 1.5rem;
+        font-size: 1.3rem;
+        font-weight: 800;
+        color: var(--color-white) !important;
+        background: var(--color-purplePink) !important;
+        border-radius: .5rem;
+        width: 60%;
+    }
+  
+
+    @media screen and (max-width:1000px) {
+        .Details_list_section{
+            width: 100% !important;
+        }
+        .Details_list_section .Det-list .tab-content .DetContentWrapper .DetContentimage{
+            width: 100%;
+        }
+        .Details_list_section .Det-list .tab-content .DetContentWrapper{
+            flex-direction: column;
+        }
+        .Details_list_section .Det-list .tab-content{
+            justify-content: center;
+            align-items: center;
+            /* display: flex; */
+            flex-direction: column;
+        }
+        .Details_list_section .Det-list .tab-content .DetContentWrapper .DetContentInfo{
+            width: 100%;
+        }
+        
+        .Details_list_section .Det-list .tab-content .DetContentWrapper .DetContentInfo .DetContentbtn{
+            width: 100%;
+        }
+    }
+        @media screen and (max-width:491px) {
+            .Details_list_section .Det-list .tab-content .DetContentWrapper{
+                padding: 0;
+            }
+            .Details_list_section .Det-list .tab-content .DetContentWrapper .DetContentimage{
+                width: 100%;
+            }
+            .Details_list_section .Det-list .tab-content .DetContentWrapper .DetContentInfo{
+                padding: 0;
+            }
+            .Details_list_section .Det-list .tab-content .DetContentWrapper .DetContentInfo .price{
+                justify-content: space-between;
+                width: 100%;
+                align-items: center;
+            }
+            .Details_list_section .Det-list .tab-content .DetContentWrapper .DetContentInfo .price span{
+                width: 40.5%;
+                text-align: center;
+            }
+            
+            
+        }
